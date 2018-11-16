@@ -1,0 +1,85 @@
+/*Уничтожение отступов*/
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Корректирование ссылок*/
+a{
+  text-decoration: none;
+}
+/*Работа с логотипом сайта*/
+.logo{
+  background: #00b9f1;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+.graficlogo{
+  width: 200px;
+  height: 200px;
+}
+/*Панель нафигации (сломана)*/
+nav{
+  margin-left:33%;
+  width: 800px;
+  height: 100px;
+}
+.topnav{
+  background-color: #FFFFFF;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.topnav a{
+  color: #000;
+  text-align: center;
+  padding: 10px 50px;
+  font-size:17pt;
+}
+.topnav a:hover{
+  border-bottom: 2px solid #2980b9;
+}
+.field{
+  text-align: center;
+}
+/*Панель поиска, лучше не трогать, надо добавить иконку лупы*/
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+button {
+  background: #683B4D;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
